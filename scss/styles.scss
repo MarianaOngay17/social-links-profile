@@ -1,0 +1,80 @@
+@use 'variables' as v;
+
+body{
+    font-family: v.$fuente_principal;
+    background-color: v.$gray900;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: v.$gray800;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 18rem;
+    height: 30rem;
+    color: v.$white;
+    padding: 1.5rem;
+
+    &__informacion {
+
+        text-align: center;
+
+        &--imagen{
+            width: 80px;
+            height: 80px;
+            background-image: image-set(
+                url('../assets/images/avatar-jessica.jpeg') 1x
+            );
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        &--nombre{
+            margin-top: 1rem;
+            font-weight: v.$semibold;
+            font-size: 1.5rem;
+        }   
+
+        &--ubicacion{
+            margin-top: .5rem;
+            color: v.$green;
+            font-weight: v.$semibold;
+            font-size: .8rem;
+        }
+
+        &--texto{
+            margin: 1.5rem 0 1rem 0;
+            font-size: .8rem;
+            font-weight: v.$regular;
+        }
+    }
+
+    &__link{
+        text-align: center;
+        background-color: v.$gray700;
+        border-radius: 5px;
+        margin: 1rem;
+        padding: .8rem;
+        font-size: 14px;
+        font-weight: v.$semibold;
+
+        &:hover{
+            cursor: pointer;
+            background-color: v.$green;
+            color: v.$gray900;
+        }
+    }
+}
+
+
+.attribution{
+    color: v.$white;
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 18rem;
+  height: 30rem;
+  color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+}
+.card__informacion {
+  text-align: center;
+}
+.card__informacion--imagen {
+  width: 80px;
+  height: 80px;
+  background-image: image-set(url("../assets/images/avatar-jessica.jpeg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.card__informacion--nombre {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.card__informacion--ubicacion {
+  margin-top: 0.5rem;
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.card__informacion--texto {
+  margin: 1.5rem 0 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.card__link {
+  text-align: center;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.8rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+.card__link:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+}
+
+/*# sourceMappingURL=styles.css.map */
